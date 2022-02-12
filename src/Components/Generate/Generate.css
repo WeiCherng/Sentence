@@ -67,3 +67,12 @@
     width: 80%;
   }
 }
+@media (max-width: 576px) {
+  .generate-title {
+    font-size: 36px;
+    line-height: 1;
+  }
+  .generate-desc {
+    font-size: 18px;
+  }
+}

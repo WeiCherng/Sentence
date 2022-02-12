@@ -43,4 +43,18 @@
     .desc-container {
         padding: 30px;
     }
+    .desc-title {
+        font-size: 24px;
+    }
+    .desc-nd-title {
+        font-size: 18px;
+    }
+    .desc-q {
+        font-size: 24px;
+        margin: 12px 0;
+    }
+    .desc-a {
+        font-size: 16px;
+        margin: 0;
+    }
 }

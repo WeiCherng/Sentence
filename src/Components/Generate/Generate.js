@@ -3,6 +3,7 @@ import "./Generate.css";
 
 export default function Generate() {
   const [sentence, setSentence] = useState({ sentence: "" });
+  // const [loading, setLoading] = useState(false)
 
   const getData = async () => {
     const url = "https://secret-sierra-55072.herokuapp.com/sentence";

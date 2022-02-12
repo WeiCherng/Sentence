@@ -33,7 +33,7 @@
   }
   .faq-title {
     margin: 0 50px;
-    margin-top: 50%;
+    margin-top: 100px;
   }
 }
 
@@ -45,17 +45,32 @@
     padding: 0 40px;
     width: auto;
   }
-  .faq-box{
+  .faq-box {
     margin: 20px 0;
   }
   .faq-title {
-    margin-top: 20%;
+    margin-top: 100px;
   }
 }
 
 @media (max-width: 576px) {
+  .faq-column {
+    padding: 0 20px;
+  }
   .faq-title {
     margin: 0 50px;
-    margin-top: 70%;
+    margin-top: 50px;
+    font-size: 28px;
+  }
+  .faq-q {
+    font-size: 28px;
+    margin: 0;
+    margin-top: 12px;
+  }
+  .faq-a {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    padding-top: 6px;
   }
 }

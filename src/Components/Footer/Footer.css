@@ -1,5 +1,5 @@
 .footer-container {
-    padding: 60px 90px;
+    padding: 20px 90px;
 }
 .footer-title {
     color: #FF9F1C;
@@ -17,6 +17,6 @@
 
 @media (max-width: 576px) {
     .footer-container {
-        padding:  30px 45px;
+        padding:  20px 20px;
     }
 }

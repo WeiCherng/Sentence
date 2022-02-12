@@ -1,7 +1,6 @@
 .review-container {
   background-color: #cbf3f0;
   min-height: 540px;
-  padding: 0 100px 40px 100px;
   display: flex;
   flex-direction: column;
 }
@@ -18,14 +17,15 @@
     margin: 0 40px;
     width: 100%;
 }
+
 @media (max-width: 768px) {
   .review-row {
     flex-direction: column;
   }
 }
 @media (max-width: 576px) {
-  .review-container{
-    padding: 0 20px 20px 20px;
+  .review-container  {
+    padding: 0 24px;
   }
 }
 

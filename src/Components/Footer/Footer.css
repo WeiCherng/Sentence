@@ -1,0 +1,22 @@
+.footer-container {
+    padding: 60px 90px;
+}
+.footer-title {
+    color: #FF9F1C;
+    font-size: 36px;
+}
+.footer-link {
+    color: #2EC4B6;
+    font-size: 24px;
+    margin: 50px 0;
+}
+.line-break {
+    border: none;
+    border-top: 1px solid #000000;
+}
+
+@media (max-width: 576px) {
+    .footer-container {
+        padding:  30px 45px;
+    }
+}

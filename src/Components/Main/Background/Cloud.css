@@ -1,0 +1,13 @@
+.cloud {
+    position: absolute;
+    z-index: 1;
+    animation: moveLeft 60s linear infinite alternate both;
+}
+@keyframes moveLeft {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-300%);
+	}
+}

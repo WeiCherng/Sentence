@@ -5,7 +5,7 @@ export default function Generate() {
   const [sentence, setSentence] = useState({ sentence: "" });
 
   const getData = async () => {
-    const url = "http://localhost:5000/sentence";
+    const url = "https://secret-sierra-55072.herokuapp.com/sentence";
     const response = await fetch(url).catch((err) =>
       setSentence({ sentence: "Could Not Get A Random Sentence" })
     );

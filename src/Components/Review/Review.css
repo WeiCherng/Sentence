@@ -3,6 +3,7 @@
   min-height: 540px;
   display: flex;
   flex-direction: column;
+  padding: 0 24px;
 }
 .review-title {
   text-align: center;

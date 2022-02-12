@@ -7,7 +7,7 @@ export default function Desc() {
     <div className="desc-container">
       <div className="desc-column">
         <h2 className="font1 desc-title">
-          Uplift your day by reading a random sentece
+          Uplift your day by reading a random sentence
         </h2>
         <h2 className="font1 desc-nd-title">by sentence.com</h2>
         <div>

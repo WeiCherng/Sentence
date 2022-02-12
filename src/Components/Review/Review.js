@@ -14,12 +14,14 @@ export default function Review() {
           <ReviewBox
             title={"“Hey This website is prertty amazing.”"}
             author={"-random stranger 1"}
+            img={"dummy.png"}
           />
         </div>
         <div className="column review-column">
           <ReviewBox
-            title={"“My life changed when I recieved my random sentence”"}
-            author={"-random stranger 2"}
+            title={"“This is so random even the spellings are random.”"}
+            author={"-Derrick Lim"}
+            img={"dlls.png"}
           />
         </div>
       </div>

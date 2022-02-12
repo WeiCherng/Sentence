@@ -10,7 +10,7 @@ export default function ReviewBox(props) {
       </div>
       <div className="review-arrow"></div>
       <div className="review-avatar-cont">
-        <img className="review-avatar" src="dummy.png" alt="reviewer"/>
+        <img className="review-avatar" src={props.img} alt="reviewer"/>
       </div>
     </div>
   );

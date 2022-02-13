@@ -7,7 +7,7 @@ export default function Footer(){
             <h2 className="footer-title">SENTENCE</h2>
             <p className="footer-link">Get Your Random Sentence Today</p>
             <div className="line-break"></div>
-            <p className="font2">© 2021 . WeiCherngTang · sentence.com</p>
+            <p className="font2">© 2022 . WeiCherngTang · sentence.com</p>
         </div>
     )
 }

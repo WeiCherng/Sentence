@@ -22,7 +22,7 @@ export default function Generate() {
         <h3 className="generate-title">Generate Random Sentence</h3>
         <p className="generate-desc">
           Try the sentence generator to create unique, unrelated and out of
-          contect sentece for your daily life. Click on the generate button to
+          context sentece for your daily life. Click on the generate button to
           get your totally random sentence by a totally random stranger from the
           internet!
         </p>

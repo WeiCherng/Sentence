@@ -13,7 +13,7 @@ export default function Desc() {
         <div>
           <p className="font2 desc-q">Test your Luck</p>
           <p className="font2 desc-a">
-            Test your Luck Maybe you will get a great sentece or maybe not, Who
+            Test your Luck. Maybe you will get a great sentece or maybe not, Who
             know? See whether if the sentence is a good one
             or a bad one.
           </p>
@@ -21,7 +21,7 @@ export default function Desc() {
         <div>
           <p className="font2 desc-q">Inspired by the sentece</p>
           <p className="font2 desc-a">
-            Here is a great quote by Edward which really inspiring{" "}
+            Here is a great quote by Edward which really inspiring.
           </p>
           <p className="font2 desc-a">
             “I take random inspiration from everywhere. ” -Edward Enninful

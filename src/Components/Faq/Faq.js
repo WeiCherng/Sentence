@@ -39,14 +39,14 @@ export default function Faq() {
             <h5 className="faq-q font2">
               What if I dont want a random sentence?
             </h5>
-            <p className="faq-a font2">Too Bad for you then.</p>
+            <p className="faq-a font2">You sure you dont want one?.</p>
           </div>
           <div className="faq-box">
             <h5 className="faq-q font2">
               How do I generate a random sentence?
             </h5>
             <p className="faq-a font2">
-              Dude. Just Click the “Generate” button.
+              Just Click the “Generate” button.
             </p>
           </div>
         </div>

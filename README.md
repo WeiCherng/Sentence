@@ -7,3 +7,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Generate a random sentence from a random stranger.
 
 ## This is so random even the spellings are random!
+
+## To Run
+```
+npm install
+npm start
+```

@@ -1,19 +1,39 @@
 import React, { useState } from "react";
+import { createClient } from "@supabase/supabase-js";
 import "./Generate.css";
 
+const supabaseUrl = process.env.REACT_APP_SUPABASE_URL;
+const supabaseAnonKey = process.env.REACT_APP_SUPABASE_ANON_KEY;
+
+const supabase = createClient(supabaseUrl, supabaseAnonKey);
+
 export default function Generate() {
-  const [sentence, setSentence] = useState({ sentence: "" });
-  // const [loading, setLoading] = useState(false)
+  const [sentence, setSentence] = useState("");
+  let lastSentence = "";
 
   const getData = async () => {
-    const url = "https://secret-sierra-55072.herokuapp.com/sentence";
-    const response = await fetch(url).catch((err) =>
-      setSentence({ sentence: "Could Not Get A Random Sentence" })
-    );
-    const data = await response.json();
-    if (data && data !== sentence) {
-      setSentence(data);
+    let newSentence = lastSentence;
+    let attempts = 0;
+    const maxRetries = 3;
+
+    while (newSentence === lastSentence && attempts < maxRetries) {
+      const { data, error } = await supabase
+        .from("sentences")
+        .select("content")
+        .order("random_val", { ascending: true })
+        .gte("random_val", Math.random())
+        .limit(1);
+
+      if (error) {
+        setSentence("Error Generating Sentence");
+        return;
+      }
+
+      newSentence = data[0].content;
+      attempts++;
     }
+    lastSentence = newSentence;
+    setSentence(newSentence);
   };
 
   return (
@@ -28,7 +48,7 @@ export default function Generate() {
         </p>
         <div className="box">
           <div className="inner-box box-align">
-            <div className="sentence-box">{sentence.sentence}</div>
+            <div className="sentence-box">{sentence}</div>
           </div>
           <div className="box-align">
             <button className="primary-button" onClick={getData}>
